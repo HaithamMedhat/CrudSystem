@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body >
+
+    <div class="container py-5">
+        <div class="mb-3">
+            <label for="productName">productName</label>
+            <input type="text" class="form-control" id="productName">
+                <div class="d-none valid-feedback" id="validateInputName">
+                    Valid Name
+                </div>
+                <div class ="d-none invalid-feedback"id="nonValidateInputName">
+                    please start the name with UpperCase character, no spaces between characters
+                </div>
+        </div>
+        <div class="mb-3">
+            <label for="productPrice">productPrice</label>
+            <input type="number" class="form-control" id="productPrice">
+            <div class="d-none valid-feedback" id="validateInputPrice">
+                Valid Price Range
+            </div>
+            <div class ="d-none invalid-feedback"id="nonValidateInputPrice">
+                please enter a price with range from 1000 to 10000
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="productCatgory">productCatgory</label>
+            <input type="text" class="form-control" id="productCatgory">
+            <div class="d-none valid-feedback" id="validateInputProduct">
+                Valid Category Name
+            </div>
+            <div class ="d-none invalid-feedback"id="nonValidateInputProduct">
+                The Category Name must start with UpperCase character (no other UpperCase characters)
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="productDesc">productDescription</label>
+            <textarea type="text" class="form-control" id="productDesc"></textarea>
+        </div>
+
+        <div id="button">
+            <button class="btn btn-info" id="buttonAdd">Add Product</button>
+        </div>
+    </div>
+    <div class="container">
+
+        <input type="text" placeholder="search....." class="form-control w-75 m-auto" 
+        id="search">
+
+
+        <table class="table mt-5">
+            <thead>
+                <th>index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productCatgory</th>
+                <th>productDescription</th>
+                <th>update</th>
+                <th>delete</th>
+            </thead>
+            <tbody id="tableBody">
+
+
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

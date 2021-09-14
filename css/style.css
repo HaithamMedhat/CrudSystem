@@ -1,0 +1,18 @@
+body{
+    background-color: rgba(53, 85, 85);
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#tableBody{
+    color: white;
+    font-size: 1.2rem;
+}
+thead{
+    font-size: 1.3rem;
+}
+
+button{
+    font-size: 1.2rem !important;  
+}
